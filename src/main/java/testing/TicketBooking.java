@@ -70,32 +70,14 @@ public class TicketBooking {
 
         //table[@id='seat-layout-details']//td//div//button//span[text()='U8']
         Thread.sleep(2000);
-//        WebElement seat = driver.findElement(By.xpath("//table[@id='seat-layout-details']//td//div//button//span[text()='U8']"));
-//        seat.click();
-
-//        int[] seatNumbers = {9,8,12,13,16};
-//
-//        // Iterate through seat numbers and find corresponding buttons
-//        for (int seatNumber : seatNumbers) {
-//            // Construct XPath with the current seat number
-//            String seat = "//table[@id='seat-layout-details']//td//div//button//span[text()='U" + seatNumber + "']";
-//
-//            // Find the button with the specified seat number using dynamically generated XPath
-//            WebElement seatButton = driver.findElement(By.xpath(seat));
-//
-//            // Perform actions on the seat button, for example, click
-//            seatButton.click();
-//
-//            // Add any additional actions you need to perform with the selected seat
-//        }
-//
+ 
         int[][] seatArray = {
                 {8, 10, 12, 14, 16},
                 {7, 9, 11, 13, 15},
                 {1, 2, 3, 4, 5}
         };
 
-        // Iterate through the array and click on alternate seats
+         
         for (int row = 0; row < seatArray.length; row++) {
             for (int col = 0; col < seatArray[row].length; col ++) {
 
@@ -112,7 +94,6 @@ public class TicketBooking {
                     seatButton.click();
                 }
 
-                // Add any additional actions you need to perform with the selected seat
             }
         }
 
